@@ -1,10 +1,22 @@
 {
-  "name": "my-vue-app",
-  "version": "0.0.0",
+  "name": "vite-vue3",
+  "version": "1.0.0",
+  "description": "Starter for Vue 3 with Vite",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
+  },
+  "keywords": ["vite", "vue3"],
+  "author": "Rio Phung",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmacoders/vite-vue3.git"
+  },
+  "homepage": "https://github.com/kmacoders/vite-vue3",
+  "bugs": {
+    "url": "https://github.com/kmacoders/vite-vue3/issues"
   },
   "husky": {
     "hooks": {
