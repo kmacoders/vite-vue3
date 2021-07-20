@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -11,7 +15,7 @@
     "lib": [
       "esnext",
       "dom"
-    ]
+    ],
   },
   "include": [
     "src/**/*.ts",

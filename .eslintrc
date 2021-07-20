@@ -19,5 +19,17 @@
   "plugins": [
   ],
   "rules": {
+    "max-len": "off",
+
+    /**
+     * Err except :
+     * a || b
+     * a && b()
+     * a() || (b = c)
+     * a ? b() : c()
+     * a ? b() || (c = d) : e()
+     */
+     "no-unused-expressions": "off",
+     "@typescript-eslint/no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
   }
 }

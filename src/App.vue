@@ -7,14 +7,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, reactive } from 'vue';
+import HelloWorld from '@/components/HelloWorld.vue';
+import { Author } from './types/Author';
 
 export default defineComponent({
   name: 'App',
   components: {
     HelloWorld,
   },
+  setup() {
+
+  }
 });
 </script>
 
