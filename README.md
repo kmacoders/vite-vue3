@@ -9,7 +9,7 @@
 - 💡 VueX 4
 - 🛠️ Typescript support ( SFC )
 - 🛠️ SCSS  support ( SFC )
-- ⚡️ Eslint ( Support Vue 3 ), Stylelint,
+- ⚡️ Eslint ( support Vue 3, base extends Airbnb for Typescript ), Stylelint
 - ⚡️ CommitLint ( with Husky )
 - ⚡️ Babel
 - 📦 Support generate docs from JSDocs ( only src/helpers || src/type modify in ./typedocs.json )
