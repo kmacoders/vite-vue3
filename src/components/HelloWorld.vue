@@ -1,15 +1,17 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <button
-    type="button"
-    @click="count++"
-  >
-    count is: {{ count }}
-  </button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <div class="hello-world-container">
+    <h1>{{ msg }}</h1>
+    <button
+      type="button"
+      @click="count++"
+    >
+      count is: {{ count }}
+    </button>
+    <p>
+      Edit
+      <code>components/HelloWorld.vue</code> to test hot module replacement.
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -30,20 +32,14 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
+<style lang="scss" scoped>
+.hello-world-container {
+  button {
+    background: #25791e;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 </style>

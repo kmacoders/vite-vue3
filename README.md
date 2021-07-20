@@ -15,7 +15,7 @@
 - 📦 Support generate docs from JSDocs ( only src/helpers || src/type modify in ./typedocs.json )
 - 📦 Support alias
 - 📦 Build with 7 in 1 SCSS folder pattern
-- 📦 Hot reload
+- 📦 hot module replacement ( not reload )
 - 📦 Optimized Build
 - 📦 Bundle Analyzer
 - ...

@@ -4,7 +4,7 @@
     src="./assets/logo.png"
   >
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <div> By {{ author.name }} {{ author.age }}</div>
+  <div class="author"> By {{ author.name }} {{ author.age }}</div>
 </template>
 
 <script lang="ts">
