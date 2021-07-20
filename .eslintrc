@@ -20,7 +20,8 @@
   ],
   "rules": {
     "max-len": "off",
-
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
     /**
      * Err except :
      * a || b

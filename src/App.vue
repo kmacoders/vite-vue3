@@ -4,12 +4,13 @@
     src="./assets/logo.png"
   >
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div> By {{ author.name }} {{ author.age }}</div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
 import HelloWorld from '@/components/HelloWorld.vue';
-import { Author } from './types/Author';
+import { Author } from '@/types/Author';
 
 export default defineComponent({
   name: 'App',
@@ -17,8 +18,15 @@ export default defineComponent({
     HelloWorld,
   },
   setup() {
+    const author: Author = reactive({
+      name: 'Huwng',
+      age: 30,
+    });
 
-  }
+    return {
+      author,
+    };
+  },
 });
 </script>
 
