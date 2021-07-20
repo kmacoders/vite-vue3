@@ -1,27 +1,68 @@
-# Vue 3 + Typescript + Vite
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-## Recommended IDE Setup
+# Vue 3 Starter Setup ⚡
+## Feature
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+> Based on Vite 
 
-### If Using `<script setup>`
+- 💡 Vue 3 
+- 💡 VueX 4
+- 🛠️ Typescript support ( SFC )
+- 🛠️ SCSS  support ( SFC )
+- ⚡️ Eslint ( Support Vue 3 ), Stylelint,
+- ⚡️ CommitLint ( with Husky )
+- ⚡️ Babel
+- 📦 Support generate docs from JSDocs ( only src/helpers || src/type modify in ./typedocs.json )
+- 📦 Support alias
+- 📦 Build with 7 in 1 SCSS folder pattern
+- 📦 Hot reload
+- 📦 Optimized Build
+- 📦 Bundle Analyzer
+- ...
+- Updating...
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+### Commit code
 
-## Type Support For `.vue` Imports in TS
+#### Commitlint Config Conventional
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+-   `build` : Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).
+-   `ci` : Changes to our CI configuration files and scripts (example scopes: Gitlab CI, Circle, BrowserStack, SauceLabs).
+-   `chore` : add something without touching production code (Eg: update npm dependencies)
+-   `docs` : Documentation only changes
+-   `feat` : A new feature
+-   `fix` : A bug fix
+-   `perf` : A code change that improves performance
+-   `refactor` : A code change that neither fixes a bug nor adds a feature
+-   `revert` : Reverts a previous commit
+-   `style` : Changes that do not affect the meaning of the code (Eg: adding white-space, formatting, missing semi-colons, etc)
+-   `test` : Adding missing tests or correcting existing tests
 
-### If Using Volar
+```
+git commit -m "fix textfield" # fails
+git commit -m "fix: fix textfield" # passes
+```
+### SCSS
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+-   Only import on main.scss
+-   On child folder, import child file to `*-dir.scss` , and import `*-dir.scss` in `main.scss`
 
-### If Using Vetur
+Example :
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+`_utils.scss`
+
+```
+@import 'variables.scss' # Sass Variables
+@import 'functions.scss' # Sass Functions
+@import 'mixins.scss' # Sass Mixins
+@import 'helpers.scss' # Class & placeholders helpers
+```
+`main.scss`
+
+```
+/*
+ * Utils
+*/
+@import  './utils/utils-dir';
+```
+
+### ⚡️ Happy Coding !!! 
